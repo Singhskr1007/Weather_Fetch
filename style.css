@@ -20,7 +20,7 @@ body {
 .card {
     filter: drop-shadow(0 0 3rem crimson);
     max-width: 500px;
-    background: linear-gradient(100deg, #252525, #000000);
+    background: linear-gradient(100deg, #000000, #000000);
     color: #ffffff;
     border-radius: 20px;
     padding: 40px 30px;
