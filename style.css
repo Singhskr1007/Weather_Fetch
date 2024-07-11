@@ -6,7 +6,7 @@
 body {
     background: linear-gradient(88deg, rgb(255, 255, 255), rgb(129, 129, 129));
     scroll-behavior: smooth;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .card {
     filter: drop-shadow(0 0 3rem crimson);
@@ -134,6 +134,34 @@ body {
 .error.fadeOut {
     opacity: 0;
 }
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkedin, .github {
+    color: black;
+    opacity: 0.7;
+    text-align: center;
+    border: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 0 0 10px 2px #000000;
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+.linkedin:hover, .github:hover {
+    opacity: 1;
+    box-shadow: 0 0 10px 3px #000000;
+    transform: scale(1.1);
+}
+hr
+{
+    color: black;
+}
+/* Media Queries */
 @media (max-width: 768px) {
     .card {
         max-width: 90%;
@@ -161,6 +189,18 @@ body {
     .humidity, .wind {
         font-size: 20px;
     }
+
+    .linkedin, .github {
+        height: 40px;
+        width: 40px;
+        transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+        opacity: 1;
+    }
+    .linkedin:hover, .github:hover {
+        box-shadow: 0 0 10px 3px #66FCF1;
+        transform: scale(1.1);
+        opacity: 1;
+    }
 }
 @media (max-width: 480px) {
     .card {
@@ -183,5 +223,17 @@ body {
     }
     .humidity, .wind {
         font-size: 18px;
+    }
+    
+    .linkedin, .github {
+        height: 30px;
+        width: 30px;
+        transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+        opacity: 1;
+    }
+    .linkedin:hover, .github:hover {
+        box-shadow: 0 0 10px 3px #66FCF1;
+        transform: scale(1.1);
+        opacity: 1;
     }
 }
