@@ -80,7 +80,7 @@ body {
 
 .search button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 20px #0bc126;
+    box-shadow: 0 0 20px 4.3px #0bc126;
 }
 
 .search button img {
