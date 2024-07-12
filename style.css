@@ -18,21 +18,21 @@ body {
 }
 
 .card {
-    filter: drop-shadow(0 0 3rem crimson);
+    box-shadow: 0 0 10px 2px red;
     max-width: 500px;
-    background: linear-gradient(100deg, #000000, #000000);
+    background: linear-gradient(100deg, #252525, #000000);
     color: #ffffff;
     border-radius: 20px;
     padding: 40px 30px;
     text-align: center;
-    transition: transform 0.6s ease-out, filter 0.6s ease-out;
+    transition: transform 0.6s ease-out, box-shadow 0.6s ease-out;
     max-height:600px ;
     overflow: hidden;
 }
 
 .card:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 0 4rem crimson);
+    transform: scale(1.03);
+    box-shadow: 0 0 20px 5px red;
 }
 
 .search {
